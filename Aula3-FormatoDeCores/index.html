@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cores,Imagens e Links</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Formatos de Cor no CSS:</h2>
+            <h3 style="color: #FF5733;">Título com cor em Hexadecimal</h3>
+            <h3 style="color: rgb(0, 128, 255);">Título com cor em RGB</h3>
+            <h3 style="color: rgba(0, 128, 0, 0.6);">Título com cor em RGBA</h3>
+        </section>
+        <section>
+            <p style="color: blue;">Texto em uma cor específica</p>
+
+            <p style="background-color: rgb(255, 255, 0); color: black;">Fundo do texto em uma cor específica</p>
+        </section>
+
+        <!--Imagem como elemento da página-->
+        <section>
+            <img src="33523871-high-scaled-aspect-ratio-512-320-2.webp" alt="Teste" title="Teste" width="300"
+                height="290">
+        </section>
+        <section>
+            <div style="border: 1px solid yellow;width: 500px; height: 500px; color: black; text-align: center; background-image: url('33523871-high-scaled-aspect-ratio-512-320-2.webp'); background-size: cover; background-position: center; 
+                background-repeat: no-repeat; padding: 20px;
+                background-size:contain; 
+                background-position:center;">
+                <h2> Imagem como background</h2>
+                <p> Esta seçao tem uma imagem de fundo</p>
+
+            </div>
+        </section>
+        <section>
+            <h1>Vídeos em HTML</h1>
+            <video src="assets/video.mp4" controls autoplay loop width="560" height="315">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </section>
+        <section>
+            <h1>Vídeos Externos</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FbokH8l6ulo?si=4bTaBwzPJFSImJ7Z"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <hr>
+    </main>
+</body>
+
+</html>
