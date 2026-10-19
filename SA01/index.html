@@ -1,0 +1,240 @@
+<DOCTYPE html>
+    <html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>SENAI - Site Oficial</title>
+        <style>
+            body {
+                background-color: #F8FAFC;
+                color: #334155;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            header {
+                background-color: #1E3A8A;
+                color: white;
+                padding: 15px 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            header h1 {
+                margin: 0;
+                font-size: 24px;
+            }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin-left: 20px;
+                font-weight: bold;
+            }
+
+            main {
+                max-width: 900px;
+                margin: 30px auto;
+                padding: 0 20px;
+            }
+
+            section {
+                padding: 20px;
+                margin-bottom: 25px;
+
+            }
+
+            h2,
+            h3 {
+                color: #1E3A8A;
+                margin-top: 0;
+            }
+
+
+            .banner {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .banner-texto {
+                flex: 1;
+            }
+
+            .banner-img {
+                width: 280px;
+                height: 180px;
+                object-fit: cover;
+
+            }
+
+
+            .btn {
+                display: inline-block;
+                background-color: #2563EB;
+                color: white;
+                padding: 10px 20px;
+                text-decoration: none;
+                font-weight: bold;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+
+            .cards {
+                display: flex;
+                gap: 15px;
+            }
+
+            .card {
+                flex: 1;
+                background-color: #F8FAFC; padding: 15px;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 10px;
+            }
+
+            th,
+            td {
+                border: 1px solid #cbd5e1;
+                padding: 10px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #1E3A8A;
+                color: white;
+            }
+
+            label {
+                display: block;
+                margin-top: 10px;
+                font-weight: bold;
+            }
+
+            input,
+            select {
+                width: 100%;
+                padding: 8px;
+                margin-top: 5px;
+                border: 1px solid #cbd5e1;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            footer {
+                background-color: #1E3A8A;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                margin-top: 40px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>SENAI</h1>
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#cursos">Cursos</a>
+                <a href="#vagas">Oportunidades</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </header>
+
+        <main>
+
+            <section id="inicio" class="banner">
+                <div class="banner-texto">
+                    <h2>Educação Profissional de Excelência para a Indústria</h2>
+                    <p>Prepare-se para o futuro com os cursos técnicos e de especialização do SENAI. Transforme sua
+                        carreira hoje.</p>
+                    <a href="#cursos" class="btn">Explorar Cursos</a>
+                </div>
+                <img src="images (1).jpg" alt="SENAI" class="banner-img">
+            </section>
+
+            <section id="cursos">
+                <h2>Cursos em Destaque</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Automação Industrial</h3>
+                        <p>Cursos técnicos em robótica e processos industriais.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Mecânica Automotiva</h3>
+                        <p>Manutenção e diagnóstico avançado de veículos.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Tecnologia da Informação</h3>
+                        <p>Desenvolvimento de sistemas e programação web.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="vagas">
+                <h2>Oportunidades de Emprego</h2>
+                <table>
+                    <tr>
+                        <th>Área</th>
+                        <th>Cargo</th>
+                        <th>Empresa</th>
+                        <th>Local</th>
+                    </tr>
+                    <tr>
+                        <td>Automação Industrial</td>
+                        <td>Técnico de Robótica Pleno</td>
+                        <td>Bosch</td>
+                        <td>Curitiba - PR</td>
+                    </tr>
+                    <tr>
+                        <td>Mecânica Automotiva</td>
+                        <td>Engenheiro de Automação</td>
+                        <td>Siemens</td>
+                        <td>Jundiaí - SP</td>
+                    </tr>
+                    <tr>
+                        <td>Tecnologia da Informação</td>
+                        <td>Operador de Linha Automatizada</td>
+                        <td>WEG</td>
+                        <td>Jaraguá do Sul - SC</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="contato">
+                <h2>Formulário de Interesse</h2>
+                <form action="#" method="post">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                    <label for="email">E-mail de Contato:</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+
+                    <label for="curso">Curso de Interesse:</label>
+                    <select id="curso" name="curso">
+                        <option value="automacao">Automação Industrial</option>
+                        <option value="mecanica">Mecânica Automotiva</option>
+                        <option value="ti">Tecnologia da Informação</option>
+                    </select>
+
+                    <br><br>
+                    <button type="submit" class="btn">Enviar Inscrição</button>
+                </form>
+            </section>
+
+        </main>
+
+        <footer>
+            <p> 2026 SENAI - Projeto Integrador</p>
+        </footer>
+
+    </body>
+
+    </html>
