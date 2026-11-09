@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+.paragrafo-estilizado,
+th,
+td {
+    text-align: center;
+}
+
+h1 {
+    color: yellow;
+    margin-top: 10px;
+}
+
+h2,
+h3 {
+    color: white;
+}
+
+p {
+    font-size: 18px;
+}
+
+#cabecalho-principal {
+    background: black;
+    padding: 20px;
+}
+
+#imagem-destaque {
+    width: 400px;
+    border: 3px solid green;
+}
+
+.paragrafo-estilizado {
+    color: #222;
+    margin: 20px;
+    padding: 15px;
+    border: 2px solid black;
+}
+
+.menu-horizontal {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.menu-horizontal li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.menu-horizontal a {
+    color: green;
+}
+
+.menu-horizontal a:visited {
+    color: green;
+}
+
+.menu-horizontal a:hover {
+    color: red;
+}
+
+.menu-horizontal a:active {
+    color: green;
+}
+
+img,
+table {
+    display: block;
+    margin: 20px auto;
+}
+
+.lista-personalizada {
+    list-style: square;
+    margin-left: 40px;
+}
+
+table {
+    width: 250px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
